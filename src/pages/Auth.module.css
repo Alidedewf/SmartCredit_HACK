@@ -1,0 +1,129 @@
+.page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 360px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #2ea499, #00ffc3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  input {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  input:focus {
+    outline: 1px solid #00ffc3;
+  }
+  
+  .btn {
+    background: linear-gradient(135deg, #2ea499, #00ffc3);
+    color: #0f172a;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  }
+  
+  .error {
+    color: #ff6b6b;
+    font-size: 13px;
+  }
+  
+  .switch {
+    margin-top: 20px;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+  
+  .switch span {
+    color: #00ffc3;
+    cursor: pointer;
+  }
+  
+  select {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+    width: 100%;
+  }
+  
+  /* При наведении и фокусе */
+  select:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+  }
+  select:focus {
+    outline: 1px solid #00ffc3;
+    background: rgba(255, 255, 255, 0.12);
+  }
+  
+  /* Стрелка выбора (кастомная) */
+  select::-ms-expand {
+    display: none;
+  }
+  select::after {
+    content: "▼";
+    color: #00ffc3;
+    position: absolute;
+    right: 14px;
+    pointer-events: none;
+  }
+  
+  /* Контейнер, чтобы было красиво */
+  .selectWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
